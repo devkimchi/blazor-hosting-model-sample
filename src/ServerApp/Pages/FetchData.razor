@@ -1,7 +1,7 @@
-﻿@page "/fetchdata"
+@page "/fetchdata"
 
 <PageTitle>Weather forecast</PageTitle>
 
 <h1>Weather forecast</h1>
 
-<FetchDataComponent />
+<FetchDataComponent Data="@DateTime.Now.ToString("O")" />

@@ -1,4 +1,5 @@
-using ServerApp.Models;
+using Common.Models;
+using Common.Services;
 
 namespace ServerApp.Services
 {
@@ -9,8 +10,9 @@ namespace ServerApp.Services
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        public Task<WeatherForecast[]> GetForecastAsync(DateOnly startDate)
+        public Task<WeatherForecast[]> GetForecastAsync(string data)
         {
+            var startDate = DateOnly.FromDateTime(DateTime.Parse(data));
             return Task.FromResult(Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = startDate.AddDays(index),

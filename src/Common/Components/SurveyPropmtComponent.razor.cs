@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components;
 
-namespace ServerApp.Components
+namespace Common.Components
 {
     public partial class SurveyPropmtComponent : ComponentBase
     {
