@@ -12,7 +12,7 @@ This provides sample code that shows various types of Blazor hosting models - Se
 
 1. Fork this repository.
 1. Clone to your local machine.
-1. Open the solution, `BlazorHostingModels.sln` with Visual Studio.
+1. Open the solution, `BlazorHostingModels.sln`, with Visual Studio.
 1. Build the entire solution.
 1. Run each project individually to see how it works.
 
