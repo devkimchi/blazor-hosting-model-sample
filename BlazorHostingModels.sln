@@ -18,7 +18,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostedWasm", "src\HostedWas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StandaloneWasm", "src\StandaloneWasm\StandaloneWasm.csproj", "{2B03E3F9-0E0C-4D65-A611-A9A49C42309F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridMaui", "src\HybridMaui\HybridMaui.csproj", "{23994A4A-B56A-4176-8E4B-67EED3C6F62F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridMaui", "src\HybridMaui\HybridMaui.csproj", "{23994A4A-B56A-4176-8E4B-67EED3C6F62F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridWinForm", "src\HybridWinForm\HybridWinForm.csproj", "{42102912-43E1-4890-A427-E932A7169A31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +50,10 @@ Global
 		{23994A4A-B56A-4176-8E4B-67EED3C6F62F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23994A4A-B56A-4176-8E4B-67EED3C6F62F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{23994A4A-B56A-4176-8E4B-67EED3C6F62F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{42102912-43E1-4890-A427-E932A7169A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42102912-43E1-4890-A427-E932A7169A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42102912-43E1-4890-A427-E932A7169A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42102912-43E1-4890-A427-E932A7169A31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{819EB56C-3704-416E-A1C8-7E0A44FBDC62} = {856D8862-3781-4CC0-B49C-FB9801532D47}
 		{2B03E3F9-0E0C-4D65-A611-A9A49C42309F} = {856D8862-3781-4CC0-B49C-FB9801532D47}
 		{23994A4A-B56A-4176-8E4B-67EED3C6F62F} = {856D8862-3781-4CC0-B49C-FB9801532D47}
+		{42102912-43E1-4890-A427-E932A7169A31} = {856D8862-3781-4CC0-B49C-FB9801532D47}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C8F2A71-652D-4963-A146-6FA8317FFB55}
