@@ -11,6 +11,9 @@ charset = utf-8
 trim_trailing_whitespace = false
 insert_final_newline = false
 
+[*.{json}]
+indent_size = 2
+
 [*.cs]
 # CS8602: Dereference of a possibly null reference.
 dotnet_diagnostic.CS8602.severity = none
