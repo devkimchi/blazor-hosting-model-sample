@@ -1,5 +1,6 @@
 using Common.Services;
 
+using Microsoft.AspNetCore.Components.WebView;
 using Microsoft.AspNetCore.Components.WebView.WindowsForms;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -18,7 +19,14 @@ namespace HybridWinForm
 
             blazorWebView1.HostPage = "wwwroot\\index.html";
             blazorWebView1.Services = services.BuildServiceProvider();
-            blazorWebView1.RootComponents.Add<FetchData>("#app");
+            blazorWebView1.RootComponents.Add<App>("#app");
+            blazorWebView1.UrlLoading += (sender, urlLoadingEventArgs) =>
+            {
+                if (urlLoadingEventArgs.Url.Host != "0.0.0.0")
+                {
+                    urlLoadingEventArgs.UrlLoadingStrategy = UrlLoadingStrategy.OpenInWebView;
+                }
+            };
         }
     }
 }
