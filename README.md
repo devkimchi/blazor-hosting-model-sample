@@ -16,6 +16,12 @@ This provides sample code that shows various types of Blazor hosting models - Se
 1. Build the entire solution.
 1. Run each project individually to see how it works.
 
+  > For the hosted Blazor WASM app, run the following [SWA CLI](https://azure.github.io/static-web-apps-cli/) command within Visual Studio Code, Windows Terminal or PowerShell Console:
+  > 
+  > ```powershell
+  > swa start
+  > ```
+
 ## Something More?
 
 - [Migrating ASP.NET WebForm to Blazor](https://learn.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/migration?WT.mc_id=dotnet-96001-juyoo)
