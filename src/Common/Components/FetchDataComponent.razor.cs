@@ -11,13 +11,16 @@ namespace Common.Components
         public IWeatherForecastService? ForecastService { get; set; }
 
         [Parameter]
-        public string? Data { get; set; }
+        public string? Start { get; set; }
+
+        [Parameter]
+        public string? Range { get; set; }
 
         protected WeatherForecast[]? Forecasts { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
-            this.Forecasts = await this.ForecastService.GetForecastAsync(this.Data);
+            this.Forecasts = await this.ForecastService.GetForecastAsync(this.Start, this.Range);
         }
     }
 }

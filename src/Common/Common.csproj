@@ -15,4 +15,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Services\Common.Services.csproj" />
+  </ItemGroup>
+
 </Project>

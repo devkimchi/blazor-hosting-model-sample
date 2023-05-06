@@ -1,4 +1,4 @@
-﻿<p>This component demonstrates fetching data from a service.</p>
+<p>This component demonstrates fetching data from a service.</p>
 
 @if (Forecasts == null)
 {
@@ -19,7 +19,7 @@ else
             @foreach (var forecast in Forecasts)
             {
                 <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
+                    <td>@forecast.Date.ToString("yyyy-MM-dd")</td>
                     <td>@forecast.TemperatureC</td>
                     <td>@forecast.TemperatureF</td>
                     <td>@forecast.Summary</td>

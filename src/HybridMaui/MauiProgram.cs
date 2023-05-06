@@ -1,7 +1,5 @@
 using Common.Services;
 
-using HybridMaui.Services;
-
 using Microsoft.Extensions.Logging;
 
 namespace HybridMaui
@@ -25,7 +23,7 @@ namespace HybridMaui
             builder.Logging.AddDebug();
 #endif
 
-            builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastService>();
+            builder.Services.AddSingleton<IWeatherForecastService, LocalWeatherForecastService>();
 
             return builder.Build();
         }

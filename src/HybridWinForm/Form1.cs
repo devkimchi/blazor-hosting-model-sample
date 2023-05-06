@@ -1,3 +1,5 @@
+using Common.Services;
+
 using Microsoft.AspNetCore.Components.WebView.WindowsForms;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,9 +13,12 @@ namespace HybridWinForm
 
             var services = new ServiceCollection();
             services.AddWindowsFormsBlazorWebView();
+
+            services.AddSingleton<IWeatherForecastService, LocalWeatherForecastService>();
+
             blazorWebView1.HostPage = "wwwroot\\index.html";
             blazorWebView1.Services = services.BuildServiceProvider();
-            blazorWebView1.RootComponents.Add<Counter>("#app");
+            blazorWebView1.RootComponents.Add<FetchData>("#app");
         }
     }
 }
