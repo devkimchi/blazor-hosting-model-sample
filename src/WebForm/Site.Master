@@ -49,7 +49,7 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/FetchData">FetchData</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/FetchData">Fetch data</a></li>
                     </ul>
                 </div>
             </div>

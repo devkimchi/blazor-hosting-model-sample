@@ -15,7 +15,8 @@ namespace HybridWinForm
             var services = new ServiceCollection();
             services.AddWindowsFormsBlazorWebView();
 
-            services.AddSingleton<IWeatherForecastService, LocalWeatherForecastService>();
+            services.AddSingleton(sp => new HttpClient { BaseAddress = new Uri("http://localhost:7071") });
+            services.AddSingleton<IWeatherForecastService, ApiWeatherForecastService>();
 
             blazorWebView1.HostPage = "wwwroot\\index.html";
             blazorWebView1.Services = services.BuildServiceProvider();

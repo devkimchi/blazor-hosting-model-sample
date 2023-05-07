@@ -22,8 +22,8 @@ namespace HybridMaui
             builder.Services.AddBlazorWebViewDeveloperTools();
             builder.Logging.AddDebug();
 #endif
-
-            builder.Services.AddSingleton<IWeatherForecastService, LocalWeatherForecastService>();
+            builder.Services.AddSingleton(sp => new HttpClient { BaseAddress = new Uri("http://localhost:7071") });
+            builder.Services.AddSingleton<IWeatherForecastService, ApiWeatherForecastService>();
 
             return builder.Build();
         }
