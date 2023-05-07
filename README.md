@@ -11,16 +11,26 @@ This provides sample code that shows various types of Blazor hosting models - Se
 ## Getting Started
 
 1. Fork this repository.
-1. Clone to your local machine.
+1. Clone the forked repository to your local machine.
 1. Open the solution, `BlazorHostingModels.sln`, with Visual Studio.
 1. Build the entire solution.
+
+   > There might be a chance that solution build fails. Then, clean the solution first and rebuild the solution.
+
+1. Run the backend API in a separate console like Visual Studio Code, Windows Terminal or PowerShell Console.
+
+    ```powershell
+    cd src/BackendApi
+    func start
+    ```
+
 1. Run each project individually to see how it works.
 
-  > For the hosted Blazor WASM app, run the following [SWA CLI](https://azure.github.io/static-web-apps-cli/) command within Visual Studio Code, Windows Terminal or PowerShell Console:
-  > 
-  > ```powershell
-  > swa start
-  > ```
+   > For the hosted Blazor WASM app, run the following [SWA CLI](https://azure.github.io/static-web-apps-cli/) command within Visual Studio Code, Windows Terminal or PowerShell Console:
+   > 
+   > ```powershell
+   > swa start
+   > ```
 
 ## Something More?
 
