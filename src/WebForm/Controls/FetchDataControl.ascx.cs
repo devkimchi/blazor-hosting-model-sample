@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using System.Web.UI;
 
 using Common.Models;
@@ -18,10 +19,12 @@ namespace WebForm.Controls
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.Page.RegisterAsyncTask(new PageAsyncTask(async _ =>
-            {
-                this.Forecasts = await this.Service.GetForecastAsync(this.Start, this.Range);
-            }));
+            this.Page.RegisterAsyncTask(new PageAsyncTask(GetForecastsAsync));
+        }
+
+        private async Task GetForecastsAsync()
+        {
+            this.Forecasts = await this.Service.GetForecastAsync(this.Start, this.Range);
         }
     }
 }
