@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Models", "src\Common
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Services", "src\Common.Services\Common.Services.csproj", "{EEFDB6BF-5D74-4ACA-ABE7-4C4B74C5882B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "src\Common\Common.csproj", "{AAC73014-A7F3-45D4-B424-F4D41E63E6BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Components", "src\Common.Components\Common.Components.csproj", "{AAC73014-A7F3-45D4-B424-F4D41E63E6BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendApi", "src\BackendApi\BackendApi.csproj", "{CA961E76-9001-4775-9642-929879C4D09C}"
 EndProject
