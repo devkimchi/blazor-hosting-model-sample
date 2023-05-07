@@ -1,10 +1,12 @@
 # Blazor Hosting Model Sample
 
-This provides sample code that shows various types of Blazor hosting models - Server, WASM (hosted/standalone) and Hybrid (MAUI and WinForm). They all share the same components with minimal code changes.
+This provides sample code that shows various types of Blazor hosting models - Server, WASM (hosted/standalone) and Hybrid (MAUI/WinForm/WPF). They all share the same components with minimal code changes.
 
 ## Prerequisites
 
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/?WT.mc_id=dotnet-96001-juyoo)
+- [Azure Functions Core Tools](https://learn.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=dotnet-96001-juyoo)
+- [SWA CLI](https://azure.github.io/static-web-apps-cli/)
 
 > Due to the nature of the sample applications, it only targets Windows OS.
 
@@ -17,7 +19,7 @@ This provides sample code that shows various types of Blazor hosting models - Se
 
    > There might be a chance that solution build fails. Then, clean the solution first and rebuild the solution.
 
-1. Run the backend API in a separate console like Visual Studio Code, Windows Terminal or PowerShell Console.
+1. Run the backend API in a separate terminal or console like [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=dotnet-96001-juyoo), [Windows Terminal](https://learn.microsoft.com/windows/terminal/?WT.mc_id=dotnet-96001-juyoo) or [PowerShell](https://learn.microsoft.com/powershell/scripting/overview?WT.mc_id=dotnet-96001-juyoo).
 
     ```powershell
     cd src/BackendApi
@@ -26,7 +28,7 @@ This provides sample code that shows various types of Blazor hosting models - Se
 
 1. Run each project individually to see how it works.
 
-   > For the hosted Blazor WASM app, run the following [SWA CLI](https://azure.github.io/static-web-apps-cli/) command within Visual Studio Code, Windows Terminal or PowerShell Console:
+   > For the hosted Blazor WASM app, run the following SWA CLI command within Visual Studio Code, Windows Terminal or PowerShell:
    > 
    > ```powershell
    > swa start
