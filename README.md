@@ -30,4 +30,5 @@ This provides sample code that shows various types of Blazor hosting models - Se
 - [Blazor Hybrid MAUI](https://learn.microsoft.com/aspnet/core/blazor/hybrid/tutorials/maui?WT.mc_id=dotnet-96001-juyoo)
 - [Blazor Hybrid WinForm](https://learn.microsoft.com/en-us/aspnet/core/blazor/hybrid/tutorials/windows-forms?WT.mc_id=dotnet-96001-juyoo)
 - [Blazor Hybrid WPF](https://learn.microsoft.com/en-us/aspnet/core/blazor/hybrid/tutorials/wpf?WT.mc_id=dotnet-96001-juyoo)
-- [Reusing Blazor Components](https://learn.microsoft.com/en-us/aspnet/core/blazor/hybrid/reuse-razor-components?WT.mc_id=dotnet-96001-juyoo)
+- [Blazor Hybrid routing and navigation](https://learn.microsoft.com/aspnet/core/blazor/hybrid/routing?WT.mc_id=dotnet-96001-juyoo)
+- [Blazor Hybrid reusing components](https://learn.microsoft.com/en-us/aspnet/core/blazor/hybrid/reuse-razor-components?WT.mc_id=dotnet-96001-juyoo)

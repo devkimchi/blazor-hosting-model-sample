@@ -1,27 +1,30 @@
+﻿using System;
+using System.Net.Http;
+using System.Windows;
+
 using Common.Services;
 
 using Microsoft.AspNetCore.Components.WebView;
-using Microsoft.AspNetCore.Components.WebView.WindowsForms;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace HybridWinForm
+namespace HybridWpf
 {
-    public partial class Form1 : Form
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
     {
-        public Form1()
+        public MainWindow()
         {
             InitializeComponent();
 
             var services = new ServiceCollection();
-            services.AddWindowsFormsBlazorWebView();
+            services.AddWpfBlazorWebView();
 
             services.AddSingleton(sp => new HttpClient { BaseAddress = new Uri("http://localhost:7071") });
             services.AddSingleton<IWeatherForecastService, ApiWeatherForecastService>();
 
-            blazorWebView1.HostPage = "wwwroot\\index.html";
-            blazorWebView1.Services = services.BuildServiceProvider();
-            blazorWebView1.RootComponents.Add<App>("#app");
-            blazorWebView1.UrlLoading += this.Handle_UrlLoading;
+            Resources.Add("services", services.BuildServiceProvider());
         }
 
         private void Handle_UrlLoading(object sender, UrlLoadingEventArgs urlLoadingEventArgs)
